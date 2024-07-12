@@ -1,0 +1,116 @@
+/*
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 900
+
+.figtree-<uniquifier> {
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+  */
+:root {
+  --Yellow: hsl(47, 88%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 50%);
+  --Black: hsl(0, 0%, 7%);
+}
+
+html {
+  font-size: 16px;
+  font-family: "Figtree", sans-serif;
+  font-weight: 500;
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background-color: var(--Yellow);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 95vh;
+}
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 24rem;
+  background-color: var(--White);
+  border-radius: 20px;
+  border: 1px solid black;
+  box-shadow: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card > * {
+  margin-top: 1.5rem;
+}
+.image-card {
+  height: 200px;
+}
+
+.image-card img {
+  border-radius: 20px;
+  height: fit-content;
+}
+
+.content-card {
+  display: flex;
+  flex-direction: column;
+}
+.content-card > * {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.content-card > b {
+  font-weight: 700;
+  background-color: var(--Yellow);
+  border-radius: 0.2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  width: fit-content;
+}
+.content-card > span {
+  font-weight: 400;
+}
+
+.content-card > p {
+  color: var(--Grey);
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.footer-card {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+}
+
+.footer-card span {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.footer-card span::before {
+  content: "";
+  display: inline-block;
+  width: 2rem; /* Ajusta el ancho deseado */
+  height: 2rem; /* Ajusta la altura deseada */
+  background-image: url(./assets/images/image-avatar.webp);
+  background-size: cover; /* Ajusta el tamaño de la imagen para que cubra el contenedor */
+  margin-right: 0.5rem;
+  vertical-align: middle; /* Alinea verticalmente la imagen con el 
+  texto */
+}
